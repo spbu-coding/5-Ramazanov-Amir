@@ -1,19 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void other()
 {
     printf("!!!!!!!!!Attention!!!!!!!!!\n"
            " ***********!hacker attack!***********\n");
+    exit(0);
 }
 
 void input()
 {
     char buffer[5];
-    printf("Enter text:\n");
-    fflush(stdout);
-    scanf("%s", buffer);
-    printf("Entered: %s\n", buffer);
-    fflush(stdout);
+    gets(buffer);
 }
 
 int main()
