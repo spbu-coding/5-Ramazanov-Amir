@@ -4,6 +4,7 @@
 void other() {
     printf("!!!!!!!!!Attention!!!!!!!!! ***********!hacker attack!***********\n");
     fflush(stdout);
+    printf("%p\n", &other);
     exit(0);
 }
 
@@ -13,7 +14,7 @@ void input() {
 }
 
 int main() {
-    printf("%p\n", &other);
+
     fflush(stdout);
     input();
     printf("The hacker couldn't break our security\n");
