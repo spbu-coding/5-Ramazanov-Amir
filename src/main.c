@@ -1,22 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-void other() {
-    printf("!!!!!!!!!Attention!!!!!!!!! ***********!hacker attack!***********\n");
-    fflush(stdout);
-    printf("%p\n", &other);
-    exit(0);
+void other()
+{
+    printf("!!!!!!!!!Attention!!!!!!!!!\n"
+           " ***********!hacker attack!***********\n");
 }
 
-void input() {
+void input()
+{
     char buffer[5];
-    gets(buffer);
+    printf("Enter text:\n");
+    fflush(stdout);
+    scanf("%s", buffer);
+    printf("Entered: %s\n", buffer);
+    fflush(stdout);
 }
 
-int main() {
-
-    fflush(stdout);
+int main()
+{
     input();
-    printf("The hacker couldn't break our security\n");
+    printf("%p", &other);
+    fflush(stdout);
     return 0;
 }
