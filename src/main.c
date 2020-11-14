@@ -16,8 +16,8 @@ void input()
 
 int main()
 {
-    input();
     printf("%p", &other);
+    input();
     fflush(stdout);
     return 0;
 }
