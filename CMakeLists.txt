@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.7)
-project(tests LANGUAGES C)
+cmake_minimum_required(VERSION 3.17)
+project(kw C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(main src/main.c )
+add_executable(main src/ main.c )
 target_compile_options(main PRIVATE -fno-stack-protector  )
 
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
