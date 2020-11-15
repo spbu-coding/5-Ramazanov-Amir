@@ -18,7 +18,7 @@ void input()
 
 int main()
 {
-    printf("%p", &other);
+    printf("%p\n", &other);
     input();
     printf("well\n");
     fflush(stdout);
